@@ -37,6 +37,12 @@ app.post('/bfhl', (req, res) => {
         concat_string: ""
       });
     }
+    app.get('/bfhl', (req, res) => {
+  res.status(200).json({
+    hint: 'Use POST with JSON body at /bfhl, e.g. { "data": ["a","1","334","4","R","$"] }'
+  });
+});
+
 
     const odd_numbers = [];
     const even_numbers = [];
